@@ -16,14 +16,16 @@
         padding: 0;
       }
       body {
-        color: #ec53b0;
-        background-color: #0e21a0;
+        color: #cbcbf5;
+        background-color: #0f072f;
         font-family: "Poppins", sans-serif;
       }
       nav {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        height: 80px;
+        background-color: #0f02487d;
       }
 
       nav ul {
@@ -35,21 +37,164 @@
         list-style: none;
         margin: 0 2rem;
       }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #cbcbf5;
+        font-size: 1.2rem;
+      }
+
+      nav ul li a:hover {
+        text-decoration: none;
+        color: #e1a5ff;
+        font-size: 1.22rem;
+      }
+
+      .leftNav {
+        font-size: 1.7rem;
+      }
+
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 10vh 0;
+        align-items: center;
+        /* font-size: 5rem; */
+      }
+
+      .firstSection > div {
+        width: 30%;
+        /* background-color: #13093b; */
+      }
+
+      .rightSection img {
+        width: 85%;
+        margin: 50px 0;
+      }
+
+      .leftSection {
+        font-size: 2.5rem;
+      }
+
+      .name {
+        color: #d98eff;
+      }
+
+      #element {
+        color: #d98eff;
+      }
+
+      .btn {
+        border: 2px solid #3b2f6c;
+        font-size: 0.7em;
+        border-radius: 0.2em;
+        background: #301376;
+        color: #e7d3f1;
+        padding: 0.25em;
+      }
+
+      .btn a {
+        text-decoration: none;
+        color: #e7d3f1;
+      }
+
+      .btn a:hover {
+        text-decoration: none;
+        color: #d98eff;
+      }
+
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+      }
+
+      hr {
+        height: 0.5px;
+        background-color: #3b2f6c;
+        border: none;
+        margin: 1em 5em;
+      }
+
+      .secondSection .box {
+        background-color: white;
+        width: 80vw;
+        height: 2px;
+        margin: 50px 0;
+      }
+
+      footer {
+        background-color: #0f02487d;
+        height: 15em;
+      }
+
+      .footer {
+        display: flex;
+        margin: 2em auto;
+        max-width: 80vw;
+      }
+
+      .footer-first {
+        padding-top: 1.5em;
+      }
     </style>
   </head>
   <body>
     <header>
+      <!-- This is the navbar -->
       <nav>
-        <div class="left">Jash's Portfolio</div>
-        <div class="right">
+        <div class="leftNav">Jash's Portfolio</div>
+        <div class="rightNav">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact Me</li>
+            <!-- Used href for future scalability -->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact Me</a></li>
           </ul>
         </div>
       </nav>
     </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hello there!
+          <div class="name">I'M JASH GUDHKA,</div>
+          <div>And I am a passionate,</div>
+          <!-- Below is the element used for typed js -->
+          <div><span id="element"></span></div>
+          <button class="btn download">
+            <a href="./files/JASH GUDHKA.pdf" target="_blank">Resume</a>
+          </button>
+          <button class="btn github">
+            <a href="https://github.com/jashgudhka" target="_blank">Github</a>
+          </button>
+        </div>
+        <div class="rightSection">
+          <img src="./images/web-developer.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <h1>Projects</h1>
+        <div class="box"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">Jash's Developer Portfolio</div>
+        <div class="footer-second"></div>
+        <div class="footer-third"></div>
+        <div class="footer-fourth"></div>
+      </div>
+    </footer>
+    <!-- This is the cdn for typed js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer."],
+        typeSpeed: 50,
+      });
+    </script>
   </body>
 </html>
