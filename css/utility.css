@@ -1,0 +1,25 @@
+/* lineup class and keyframes */
+.lineUp {
+  /* animation: 2s anim-lineUp ease-out infinite; */
+  animation-name: anim-lineUp;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

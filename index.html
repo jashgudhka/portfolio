@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/utility.css" />
+    <title>Jash Developer Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <!-- This is the navbar -->
+      <nav>
+        <div class="leftNav">Jash's Portfolio</div>
+        <div class="rightNav">
+          <ul>
+            <!-- Used href for future scalability -->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hello there!
+          <div class="name">
+            <p class="lineup">I'M JASH GUDHKA,</p>
+          </div>
+          <div class="">And I am a passionate,</div>
+          <!-- Below is the element used for typed js -->
+          <div><span id="element"></span></div>
+          <button class="btn download">
+            <a href="./files/JASH_GUDHKA.pdf" target="_blank">Resume</a>
+          </button>
+          <button class="btn github">
+            <a href="https://github.com/jashgudhka" target="_blank">Github</a>
+          </button>
+        </div>
+        <div class="rightSection">
+          <img src="./images/web-developer.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <h1>Projects</h1>
+        <div class="box"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3 class="footer-sign">Jash Gudhka</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/jash-gudhka-43232a192/"
+                >LinedIn</a
+              >
+            </li>
+            <li><a href="https://github.com/jashgudhka">Github</a></li>
+            <li><a href="mailto:jashgudhka@gmail.com">Email</a></li>
+          </ul>
+        </div>
+        <div class="footer-third"></div>
+        <div class="footer-fourth"></div>
+      </div>
+    </footer>
+    <!-- This is the cdn for typed js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer."],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
