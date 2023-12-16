@@ -9,134 +9,9 @@
       href="https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville&family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/utility.css" />
     <title>Jash Developer Portfolio</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        color: #cbcbf5;
-        background-color: #0f072f;
-        font-family: "Poppins", sans-serif;
-      }
-      nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 80px;
-        background-color: #0f02487d;
-      }
-
-      nav ul {
-        display: flex;
-        justify-content: center;
-      }
-
-      nav ul li {
-        list-style: none;
-        margin: 0 2rem;
-      }
-
-      nav ul li a {
-        text-decoration: none;
-        color: #cbcbf5;
-        font-size: 1.2rem;
-      }
-
-      nav ul li a:hover {
-        text-decoration: none;
-        color: #e1a5ff;
-        font-size: 1.22rem;
-      }
-
-      .leftNav {
-        font-size: 1.7rem;
-      }
-
-      .firstSection {
-        display: flex;
-        justify-content: space-around;
-        margin: 10vh 0;
-        align-items: center;
-        /* font-size: 5rem; */
-      }
-
-      .firstSection > div {
-        width: 30%;
-        /* background-color: #13093b; */
-      }
-
-      .rightSection img {
-        width: 85%;
-        margin: 50px 0;
-      }
-
-      .leftSection {
-        font-size: 2.5rem;
-      }
-
-      .name {
-        color: #d98eff;
-      }
-
-      #element {
-        color: #d98eff;
-      }
-
-      .btn {
-        border: 2px solid #3b2f6c;
-        font-size: 0.7em;
-        border-radius: 0.2em;
-        background: #301376;
-        color: #e7d3f1;
-        padding: 0.25em;
-      }
-
-      .btn a {
-        text-decoration: none;
-        color: #e7d3f1;
-      }
-
-      .btn a:hover {
-        text-decoration: none;
-        color: #d98eff;
-      }
-
-      .secondSection {
-        max-width: 80vw;
-        margin: auto;
-      }
-
-      hr {
-        height: 0.5px;
-        background-color: #3b2f6c;
-        border: none;
-        margin: 1em 5em;
-      }
-
-      .secondSection .box {
-        background-color: white;
-        width: 80vw;
-        height: 2px;
-        margin: 50px 0;
-      }
-
-      footer {
-        background-color: #0f02487d;
-        height: 15em;
-      }
-
-      .footer {
-        display: flex;
-        margin: 2em auto;
-        max-width: 80vw;
-      }
-
-      .footer-first {
-        padding-top: 1.5em;
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -158,8 +33,10 @@
       <section class="firstSection">
         <div class="leftSection">
           Hello there!
-          <div class="name">I'M JASH GUDHKA,</div>
-          <div>And I am a passionate,</div>
+          <div class="name">
+            <p class="lineup">I'M JASH GUDHKA,</p>
+          </div>
+          <div class="">And I am a passionate,</div>
           <!-- Below is the element used for typed js -->
           <div><span id="element"></span></div>
           <button class="btn download">
@@ -181,8 +58,21 @@
     </main>
     <footer>
       <div class="footer">
-        <div class="footer-first">Jash's Developer Portfolio</div>
-        <div class="footer-second"></div>
+        <div class="footer-first">
+          <h3 class="footer-sign">Jash Gudhka</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/jash-gudhka-43232a192/"
+                >LinedIn</a
+              >
+            </li>
+            <li><a href="https://github.com/jashgudhka">Github</a></li>
+            <li><a href="mailto:jashgudhka@gmail.com">Email</a></li>
+          </ul>
+        </div>
         <div class="footer-third"></div>
         <div class="footer-fourth"></div>
       </div>
